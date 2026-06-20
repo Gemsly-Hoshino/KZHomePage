@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>谁染花香入境</title>
+    <meta name="description" content="Gemsly Hoshino 的极客个人主页，纯净且极致向下兼容。">
+    <meta name="keywords" content="个人主页, 极客, 程序员, 静态博客">
+    <link rel="icon" type="image/ico" href="//sdn.geekzu.org/avatar/4cc893d113dd74ceca73f9863f2c5446/">
+    
+    <link rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://lib.baomitu.com/font-awesome/5.12.0-1/css/all.min.css">
+    <link rel="stylesheet" href="./static/style.css?v=1.2.0">
+
+    <style>
+        body {
+            /* 背景图片 */
+            background-image: url("./static/images/bg.jpeg");
+        }
+
+        .photo-bg {
+            /* 卡片左侧图片 */
+            background-image: url("./static/images/fbg.jpg");
+        }
+
+        .kz-video {
+            /* 保持隐藏，避免老设备或移动端黑屏 */
+            display: none; 
+        }
+    </style>
+    <script>
+        // 一言设置
+        let hitokoto_api = "https://v1.hitokoto.cn"; 
+    </script>
+</head>
+
+<body>
+    <div class="kz-video">
+        <video src="./static/video/lty.mp4" autoplay="autoplay" loop muted playsinline="" webkit-playsinline=""></video>
+    </div>
+    <div id="main" class="container">
+        <div class="row my-card justify-content-center">
+            <div class="col-lg-4 photo-bg"></div>
+            <div class="col-lg-8 card">
+                <h1>Gemsly Hoshino</h1>
+                <p>
+                    欢迎你访问我的主页！目前主要沉迷于纯静态技术栈 (SSG)、老旧网络栈向下兼容以及各种边缘计算折腾。
+                </p>
+                <p id="hitokoto_text">一言获取中...</p>
+                
+                <div class="container-fluid">
+                    <div class="row">
+                        <button data-href="https://blog.gemslyho.org" data-title="Blog" data-window="newtab"
+                            class="kz-nav-btn btn btn-primary col-lg-4">Blog</button>
+
+                        <button data-href="https://github.com/Gemsly-Hoshino/KZHomePage" data-title="GitHub" data-window="newtab"
+                            class="kz-nav-btn btn btn-secondary col-lg-4">GitHub</button>
+
+                        <button data-href="mailto:contact@gemslyho.org" data-title="Mail" data-window="newtab"
+                            class="kz-nav-btn btn btn-success col-lg-4">Send a Mail</button>
+                    </div>
+                </div>
+                
+                <ul class="social mt-1">
+                    <li><a href="https://github.com/Gemsly-Hoshino"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="mailto:contact@gemslyho.org"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
+                </ul>
+
+                <footer>
+                    <p>Copyright 2018 - 2026 <a href="https://blog.gemslyho.org" target="_blank">Gemsly Hoshino</a>
+                        <br>
+                        <a href="https://github.com/kaygb/KZHomePage" target="_blank" rel="noopener">KZHomePage</a>
+                        Mod by <a href="https://github.com/Gemsly-Hoshino" target="_blank" rel="noopener">Gemsly Hoshino</a>
+                    </p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://lib.baomitu.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://lib.baomitu.com/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script defer src="https://lib.baomitu.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script src="./static/main.js"></script>
+
+</body>
+</html>
