@@ -21,8 +21,6 @@ KZHomePage is a lightweight, pure static personal homepage template. It focuses 
 
 This repository is a personal fork by [Gemsly Hoshino](https://github.com/Gemsly-Hoshino) based on [kaygb's original KZHomePage](https://github.com/kaygb/KZHomePage), removing heavy dependencies like music players and returning to a pure static display.
 
-> 🌐 **在线演示 / Live Demo**: [https://blog.gemslyho.org](https://blog.gemslyho.org)
-
 ---
 
 ## ✨ 特性 / Features
