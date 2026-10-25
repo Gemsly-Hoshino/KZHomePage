@@ -85,6 +85,10 @@ h4 {
     border: none;
     padding: 50px 30px 0px;
     border-radius: 0;
+    /* 卡片半透明，露出一部分背景 */
+    background-color: rgba(255, 255, 255, 0.6);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
 }
 
 .container {
@@ -113,6 +117,19 @@ strike {
     /* box-shadow: 0px 5px 15px 5px rgb(203, 221, 232); */
     padding: 12px 40px;
     transition: ease;
+    /* 半透明按钮 */
+    background-color: rgba(0, 123, 255, 0.55);
+    border-color: rgba(0, 123, 255, 0.7);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: rgba(0, 105, 217, 0.75);
+    border-color: rgba(0, 105, 217, 0.85);
 }
 
 .btn-primary:hover {
@@ -123,6 +140,19 @@ strike {
     /* box-shadow: 0px 5px 15px 5px rgb(203, 221, 232); */
     padding: 12px 40px;
     transition: ease;
+    /* 半透明按钮 */
+    background-color: rgba(108, 117, 125, 0.55);
+    border-color: rgba(108, 117, 125, 0.7);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active,
+.btn-secondary:not(:disabled):not(.disabled):active {
+    background-color: rgba(84, 91, 98, 0.75);
+    border-color: rgba(84, 91, 98, 0.85);
 }
 
 .btn-secondary:hover {
@@ -133,6 +163,19 @@ strike {
     /* box-shadow: 0px 5px 15px 5px rgb(203, 221, 232); */
     padding: 12px 40px;
     transition: ease;
+    /* 半透明按钮 */
+    background-color: rgba(40, 167, 69, 0.55);
+    border-color: rgba(40, 167, 69, 0.7);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success:not(:disabled):not(.disabled):active {
+    background-color: rgba(30, 126, 52, 0.75);
+    border-color: rgba(30, 126, 52, 0.85);
 }
 
 .btn-success:hover {
