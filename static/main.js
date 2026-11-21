@@ -22,6 +22,18 @@ console.log(
 
 // 彻底移除了原有的音乐播放器（APlayer & Meting）AJAX 异步调用死资产
 
+// 版权年份取本地时间，避免写死导致过期（HTML 中的静态年份作为兜底）
+(function () {
+  var yearNode = document.getElementById("copyright-year");
+  if (!yearNode) {
+    return;
+  }
+  var startYear = 2018;
+  var currentYear = new Date().getFullYear();
+  yearNode.innerText =
+    currentYear > startYear ? startYear + " - " + currentYear : String(startYear);
+})();
+
 // 一言（Hitokoto）异步渲染逻辑
 fetch(hitokoto_api)
   .then((response) => response.json())
